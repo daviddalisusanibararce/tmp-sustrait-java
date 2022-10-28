@@ -30,7 +30,6 @@
         "successComment": false
       }
     ],
-    "gradle-semantic-release-plugin",
     [
       "@semantic-release/git",
       {
@@ -41,5 +40,18 @@
         "message": "chore(release): ${nextRelease.version}"
       }
     ]
-  ]
+  ],
+  "release": {
+    "plugins": [
+      "gradle-semantic-release-plugin",
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "gradle.properties"
+          ]
+        }
+      ]
+    ]
+  }
 }
