@@ -1,3 +1,14 @@
+## [1.0.3](https://github.com/daviddalisusanibararce/tmp-sustrait-java/compare/v1.0.2...v1.0.3) (2022-10-28)
+
+
+### Bug Fixes
+
+* add gradle release plugin v3 ([80cea2e](https://github.com/daviddalisusanibararce/tmp-sustrait-java/commit/80cea2ee7189064ee404450650b70989c8a28dec))
+* add gradle release plugin v4 ([7ca2e0c](https://github.com/daviddalisusanibararce/tmp-sustrait-java/commit/7ca2e0cd84ae9886582402fe820c40c29a52368e))
+* add gradle release plugin v5 ([1c52bd0](https://github.com/daviddalisusanibararce/tmp-sustrait-java/commit/1c52bd06f8b99a43d80298789524e5132e04bb75))
+* add gradle release plugin v6 ([e8b8bf5](https://github.com/daviddalisusanibararce/tmp-sustrait-java/commit/e8b8bf517d18dce3220fb8d3dc5b563c95fda5cd))
+* add gradle release plugin v7 ([8d4ba11](https://github.com/daviddalisusanibararce/tmp-sustrait-java/commit/8d4ba1170b70e21bd5ac5964b066dc8f2db7c708))
+
 Release Notes
 ---
 
