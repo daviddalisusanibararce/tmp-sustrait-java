@@ -15,21 +15,6 @@ publishing {
   publications { create<MavenPublication>("maven") { from(components["java"]) } }
   repositories {
     maven {
-      name = "GITHUB"
-      val releasesRepoUrl =
-        System.getenv("GITHUB_URL").takeUnless { it.isNullOrEmpty() }
-          ?: extra["GITHUB_URL"].toString()
-      url = uri(releasesRepoUrl)
-      credentials {
-        username =
-          System.getenv("GITHUB_ACTOR").takeUnless { it.isNullOrEmpty() }
-            ?: extra["GITHUB_ACTOR"].toString()
-        password =
-          System.getenv("GITHUB_TOKEN").takeUnless { it.isNullOrEmpty() }
-            ?: extra["GITHUB_TOKEN"].toString()
-      }
-    }
-    maven {
       name = "NEXUS"
       val nexusUrl =
         System.getenv("NEXUS_URL").takeUnless { it.isNullOrEmpty() }
