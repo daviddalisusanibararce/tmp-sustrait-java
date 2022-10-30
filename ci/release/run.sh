@@ -12,5 +12,6 @@ npx --yes \
   -p "@semantic-release/exec" \
   -p "@semantic-release/git" \
   -p "conventional-changelog-conventionalcommits" \
+  -p "gradle-semantic-release-plugin" \
   semantic-release --no-ci
 
