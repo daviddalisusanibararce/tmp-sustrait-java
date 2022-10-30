@@ -31,7 +31,7 @@ npx --yes \
   -p "@semantic-release/git" \
   -p "conventional-changelog-conventionalcommits" \
   semantic-release \
-  --ci false \
+  --no-ci\
   --dry-run \
   --preset conventionalcommits \
   --plugins \
