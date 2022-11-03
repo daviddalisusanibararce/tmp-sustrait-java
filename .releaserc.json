@@ -3,10 +3,10 @@
     { "name": "main", "channel": "release" },
     { "name": "next" },
     { "name": "next-major" },
-    { "name": "beta", "prerelease": true },
-    { "name": "alpha", "prerelease": true },
-    { "name": "snapshot", "prerelease": true },
-    { "name": "testmename", "prerelease": "testrc" }
+    { "name": "beta", "channel": "prerelease-beta", "prerelease": true },
+    { "name": "alpha", "channel": "prerelease-alpha", "prerelease": true },
+    { "name": "snapshot", "channel": "prerelease-snapshot", "prerelease": true },
+    { "name": "testmename", "channel": "prerelease-testmename", "prerelease": "testrc" }
   ],
   "preset": "conventionalcommits",
   "plugins": [
