@@ -1,6 +1,18 @@
 Release Notes
 ---
 
+## [1.2.0](https://github.com/daviddalisusanibararce/tmp-sustrait-java/compare/v1.1.0...v1.2.0) (2022-11-03)
+
+
+### ⚠ BREAKING CHANGES
+
+* test breaking change 001
+
+### Bug Fixes
+
+* add channel name to the branch distribution ([aceee7c](https://github.com/daviddalisusanibararce/tmp-sustrait-java/commit/aceee7ce470f75a42bfe5d97b7da2deb36584986))
+* add feature 006 ([297ea4d](https://github.com/daviddalisusanibararce/tmp-sustrait-java/commit/297ea4ddb91a9c28247c4a8f4d7af6ef01462b42))
+
 ## [1.1.0](https://github.com/daviddalisusanibararce/tmp-sustrait-java/compare/v1.0.9...v1.1.0) (2022-11-03)
 
 
