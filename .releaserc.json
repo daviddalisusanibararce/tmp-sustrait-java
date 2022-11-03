@@ -1,5 +1,13 @@
 {
-  "branches": ["main"],
+  "branches": [
+    "main",
+    "next",
+    "next-major",
+    { "name": "beta", "prerelease": true },
+    { "name": "alpha", "prerelease": true },
+    { "name": "snapshot", "prerelease": true },
+    { "name": "testmename", "prerelease": "testrc" }
+  ],
   "preset": "conventionalcommits",
   "plugins": [
     [
