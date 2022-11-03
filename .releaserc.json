@@ -1,8 +1,8 @@
 {
   "branches": [
-    "main",
-    "next",
-    "next-major",
+    { "name": "main", "channel": "release" },
+    { "name": "next" },
+    { "name": "next-major" },
     { "name": "beta", "prerelease": true },
     { "name": "alpha", "prerelease": true },
     { "name": "snapshot", "prerelease": true },
