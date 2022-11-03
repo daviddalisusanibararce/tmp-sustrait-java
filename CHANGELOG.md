@@ -1,6 +1,13 @@
 Release Notes
 ---
 
+## [1.0.8](https://github.com/daviddalisusanibararce/tmp-sustrait-java/compare/v1.0.7...v1.0.8) (2022-11-03)
+
+
+### Bug Fixes
+
+* add more branches to release branching strategie ([3fc9176](https://github.com/daviddalisusanibararce/tmp-sustrait-java/commit/3fc91765dca64c886105e9d76b949a2a69a5f7e3))
+
 ## [1.0.7](https://github.com/daviddalisusanibararce/tmp-sustrait-java/compare/v1.0.6...v1.0.7) (2022-10-30)
 
 
