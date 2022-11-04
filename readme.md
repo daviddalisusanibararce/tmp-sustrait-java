@@ -12,3 +12,8 @@ to test 008
 to test 009
 to test 010
 to test 011
+to test 012 - fix
+to test 013 - fix
+to test 014 - feat
+to test 015 - fix
+to test 016 - fix
