@@ -51,7 +51,7 @@ allprojects {
     dependsOn(submodulesUpdate)
   }
 
-  group = "io.substrait"
+  group = "io.github.davisusanibar"
   version = "${version}"
 
   plugins.withType<SpotlessPlugin>().configureEach {
