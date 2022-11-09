@@ -1,6 +1,13 @@
 Release Notes
 ---
 
+## [1.1.0](https://github.com/daviddalisusanibararce/tmp-sustrait-java/compare/v1.0.2...v1.1.0) (2022-11-09)
+
+
+### Features
+
+* build to sonatype ([e163411](https://github.com/daviddalisusanibararce/tmp-sustrait-java/commit/e1634110b307611ef919574ba682b45a3251d16e))
+
 ## [1.0.2](https://github.com/daviddalisusanibararce/tmp-sustrait-java/compare/v1.0.1...v1.0.2) (2022-11-09)
 
 
