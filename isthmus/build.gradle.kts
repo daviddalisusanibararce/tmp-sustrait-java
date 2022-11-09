@@ -4,37 +4,69 @@ plugins {
   id("idea")
   id("com.palantir.graal") version "0.10.0"
   id("com.diffplug.spotless") version "6.11.0"
+  signing
 }
 
-publishing { publications { create<MavenPublication>("maven") { from(components["java"]) } } }
-// publishing {
-//  publications { create<MavenPublication>("maven") { from(components["java"]) } }
-//  repositories {
-//    maven {
-//      name = "NEXUS"
-//      val nexusUrl =
-//        System.getenv("NEXUS_URL").takeUnless { it.isNullOrEmpty() }
-//          ?: extra["NEXUS_URL"].toString()
-//      val releasesRepoUrl = nexusUrl + "/maven-releases"
-//      val snapshotsRepoUrl = nexusUrl + "/maven-snapshots"
-//      url = uri(if (version.toString().endsWith("SNAPSHOT")) snapshotsRepoUrl else
-// releasesRepoUrl)
-//      isAllowInsecureProtocol =
-//        System.getenv().containsKey("NEXUS_INSECURE").takeUnless { it == false }
-//          ?: extra["NEXUS_INSECURE"].toString().toBoolean()
-//      credentials {
-//        username =
-//          System.getenv("NEXUS_USERNAME").takeUnless { it.isNullOrEmpty() }
-//            ?: extra["NEXUS_USERNAME"].toString()
-//        password =
-//          System.getenv("NEXUS_PASSWORD").takeUnless { it.isNullOrEmpty() }
-//            ?: extra["NEXUS_PASSWORD"].toString()
-//      }
-//    }
-//  }
-// }
+publishing {
+  publications {
+    create<MavenPublication>("maven-publish") {
+      from(components["java"])
 
-java { toolchain { languageVersion.set(JavaLanguageVersion.of(17)) } }
+      pom {
+        name.set("Substrait Java")
+        description.set(
+          "Create a well-defined, cross-language specification for data compute operations"
+        )
+        url.set("https://github.com/substrait-io/substrait-java")
+        properties.set(mapOf("country" to "PE", "dsusanibar.type.of" to "Java"))
+        licenses {
+          license {
+            name.set("The Apache License, Version 2.0")
+            url.set("http://www.apache.org/licenses/LICENSE-2.0.txt")
+          }
+        }
+        developers {
+          developer {
+            // TBD Get the list of
+          }
+        }
+        scm {
+          connection.set("scm:git:git://github.com:substrait-io/substrait-java.git")
+          developerConnection.set("scm:git:ssh://github.com:substrait-io/substrait-java")
+          url.set("https://github.com/substrait-io/substrait-java/")
+        }
+      }
+    }
+  }
+  repositories {
+    maven {
+      name = "local"
+      val releasesRepoUrl = "$buildDir/repos/releases"
+      val snapshotsRepoUrl = "$buildDir/repos/snapshots"
+      url = uri(if (version.toString().endsWith("SNAPSHOT")) snapshotsRepoUrl else releasesRepoUrl)
+    }
+  }
+}
+
+signing {
+  val signingKeyId =
+    System.getenv("SIGNING_KEY_ID").takeUnless { it.isNullOrEmpty() }
+      ?: extra["SIGNING_KEY_ID"].toString()
+  val signingPassword =
+    System.getenv("SIGNING_PASSWORD").takeUnless { it.isNullOrEmpty() }
+      ?: extra["SIGNING_PASSWORD"].toString()
+  val signingKey =
+    System.getenv("SIGNING_KEY").takeUnless { it.isNullOrEmpty() }
+      ?: extra["SIGNING_KEY"].toString()
+  useInMemoryPgpKeys(signingKeyId, signingKey, signingPassword)
+  sign(publishing.publications["maven-publish"])
+}
+
+java {
+  toolchain { languageVersion.set(JavaLanguageVersion.of(17)) }
+  withJavadocJar()
+  withSourcesJar()
+}
 
 dependencies {
   implementation(project(":core"))
