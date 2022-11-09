@@ -1,24 +1,23 @@
 {
   "branches": [
-    { "name": "main", "channel": "release" },
-    { "name": "next", "channel": "distribution-minor" },
-    { "name": "next-major", "channel": "distribution-major" },
-    { "name": "beta", "channel": "prerelease-beta", "prerelease": true },
-    { "name": "alpha", "channel": "prerelease-alpha", "prerelease": true },
-    { "name": "snapshot", "channel": "prerelease-snapshot", "prerelease": true },
-    { "name": "testmename", "channel": "prerelease-testmename", "prerelease": "testrc" }
+    { "name": "+([0-9])?(.{+([0-9]),x}).x" },
+    { "name": "main" },
+    { "name": "next" },
+    { "name": "next-major" },
+    { "name": "beta", "prerelease": true },
+    { "name": "alpha", "prerelease": true }
   ],
   "preset": "conventionalcommits",
   "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
     [
-      "@semantic-release/commit-analyzer",
+      "@semantic-release/exec",
       {
-        "releaseRules": [
-          {"breaking": true, "release": "minor"}
-        ]
+        "prepareCmd": "ci/release/version.sh ${nextRelease.version}",
+        "publishCmd": "ci/release/publish.sh"
       }
     ],
-    "@semantic-release/release-notes-generator",
     [
       "@semantic-release/changelog",
       {
@@ -27,18 +26,11 @@
       }
     ],
     [
-      "@semantic-release/exec",
-      {
-        "publishCmd": "echo ::set-output name=new-release-version::${nextRelease.version}"
-      }
-    ],
-    [
       "@semantic-release/github",
       {
         "successComment": false
       }
     ],
-    "gradle-semantic-release-plugin",
     [
       "@semantic-release/git",
       {
