@@ -6,3 +6,4 @@ Substrait Java Code
 - add 1st braking change
 
 - add 3rd feature
+- error: {"resource":"Release","code":"already_exists","field":"tag_name"}
