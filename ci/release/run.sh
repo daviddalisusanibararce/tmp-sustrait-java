@@ -12,5 +12,5 @@ npx --yes \
   -p "@semantic-release/exec" \
   -p "@semantic-release/git" \
   -p "conventional-changelog-conventionalcommits" \
-  semantic-release --ci
+  semantic-release --ci --debug
 
