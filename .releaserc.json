@@ -49,6 +49,26 @@
             "path": "isthmus/build/graal/isthmus-ubuntu-latest.bin",
             "name": "isthmus-ubuntu-${nextRelease.version}",
             "label": "bcknativeUbuntu"
+          },
+          {
+            "path": "**/isthmus/build/graal/isthmus-macOS-latest.bin",
+            "name": "isthmus-macOS-${nextRelease.version}",
+            "label": "bcknativeMacOS"
+          },
+          {
+            "path": "**/isthmus/build/graal/isthmus-ubuntu-latest.bin",
+            "name": "isthmus-ubuntu-${nextRelease.version}",
+            "label": "bcknativeUbuntu"
+          },
+          {
+            "path": "**/isthmus/build/graal/isthmus-macOS-latest.bin",
+            "name": "isthmus-macOS-001-1",
+            "label": "bcknativeMacOS"
+          },
+          {
+            "path": "**/isthmus/build/graal/isthmus-ubuntu-latest.bin",
+            "name": "isthmus-ubuntu-001-2",
+            "label": "bcknativeUbuntu"
           }
         ],
         "successComment": false

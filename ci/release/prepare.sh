@@ -12,3 +12,5 @@ sed -ir "s/^version = .*/version = $1/" gradle.properties
 ls -latr isthmus/build/graal
 cp isthmus/build/graal/isthmus-ubuntu-latest isthmus/build/graal/isthmus-ubuntu-latest.bin
 cp isthmus/build/graal/isthmus-macOS-latest isthmus/build/graal/isthmus-macOS-latest.bin
+echo "copy finished"
+ls -latr isthmus/build/graal
