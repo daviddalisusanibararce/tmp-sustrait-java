@@ -12,5 +12,6 @@ sed -ir "s/^version = .*/version = $1/" gradle.properties
 ls -latr isthmus/build/graal
 mv isthmus/build/graal/isthmus-macOS-latest isthmus/build/graal/isthmus-macOS-latest-$1
 mv isthmus/build/graal/isthmus-ubuntu-latest isthmus/build/graal/isthmus-ubuntu-latest-$1
+ls -latr isthmus/build/graal
 
 

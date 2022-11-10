@@ -30,8 +30,8 @@
       "@semantic-release/github",
       {
         "assets": [
-          {"path": "isthmus/build/graal/isthmus-macOS-latest-${nextRelease.version}.zip", "label": "macOS"},
-          {"path": "isthmus/build/graal/isthmus-ubuntu-latest-${nextRelease.version}.zip", "label": "Ubuntu"}
+          {"path": "isthmus/build/graal/isthmus-macOS-latest-${nextRelease.version}", "label": "macOS"},
+          {"path": "isthmus/build/graal/isthmus-ubuntu-latest-${nextRelease.version}", "label": "Ubuntu"}
         ],
         "successComment": false
       }
