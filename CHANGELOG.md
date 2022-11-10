@@ -1,6 +1,13 @@
 Release Notes
 ---
 
+## [1.2.0](https://github.com/daviddalisusanibararce/tmp-sustrait-java/compare/v1.1.0...v1.2.0) (2022-11-10)
+
+
+### Features
+
+* test feat version increase 4th one ([34322f2](https://github.com/daviddalisusanibararce/tmp-sustrait-java/commit/34322f26e901f62fe80da6d57c33f8ffc5e1d712))
+
 ## [1.1.0](https://github.com/daviddalisusanibararce/tmp-sustrait-java/compare/v1.0.0...v1.1.0) (2022-11-10)
 
 
