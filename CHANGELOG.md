@@ -1,6 +1,13 @@
 Release Notes
 ---
 
+## [1.6.0](https://github.com/daviddalisusanibararce/tmp-sustrait-java/compare/v1.5.0...v1.6.0) (2022-11-11)
+
+
+### Features
+
+* upload native images v3 ([994fa19](https://github.com/daviddalisusanibararce/tmp-sustrait-java/commit/994fa190140c197660220216fa9e243239f03e3e))
+
 ## [1.5.0](https://github.com/daviddalisusanibararce/tmp-sustrait-java/compare/v1.4.0...v1.5.0) (2022-11-11)
 
 
