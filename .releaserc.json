@@ -33,12 +33,12 @@
           {
             "path": "native/libs/isthmus-macOS-latest",
             "name": "isthmus-macOS-${nextRelease.version}",
-            "label": "nativeMacOS"
+            "label": "Isthmus Native Image - macOS"
           },
           {
             "path": "native/libs/isthmus-ubuntu-latest",
             "name": "isthmus-ubuntu-${nextRelease.version}",
-            "label": "nativeUbuntu"
+            "label": "Isthmus Native Image - Linux"
           }
         ],
         "successComment": false
