@@ -1,6 +1,13 @@
 Release Notes
 ---
 
+## [1.4.0](https://github.com/daviddalisusanibararce/tmp-sustrait-java/compare/v1.3.0...v1.4.0) (2022-11-11)
+
+
+### Features
+
+* ad native libs v2 ([2e3aea5](https://github.com/daviddalisusanibararce/tmp-sustrait-java/commit/2e3aea5362311f38d66b02f7d308c5ea6a55da94))
+
 ## [1.3.0](https://github.com/daviddalisusanibararce/tmp-sustrait-java/compare/v1.2.5...v1.3.0) (2022-11-11)
 
 
