@@ -12,3 +12,9 @@ Substrait Java Code
 
 
 - 1st PR to head repo
+
+squash and merge 001
+- todo 01 fix
+- todo 02 fix
+- todo 03 feat
+- todo 04 fix
