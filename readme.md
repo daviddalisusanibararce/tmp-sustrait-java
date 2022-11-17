@@ -9,3 +9,13 @@ Substrait Java Code
 - error: {"resource":"Release","code":"already_exists","field":"tag_name"}
 - error: hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 - error: hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+
+
+-----
+
+squash and merge 001
+- todo 01 fix
+- todo 02 fix
+- todo 03 feat
+- todo 04 fix
