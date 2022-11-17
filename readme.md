@@ -15,6 +15,7 @@ Substrait Java Code
 -----
 
 squash and merge 001
-- todo 01
-- todo 02
+- todo 01 fix
+- todo 02 fix
 - todo 03 feat
+- todo 04 fix
