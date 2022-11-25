@@ -1,13 +1,9 @@
 name: Release
 
 on:
-  push:
-    branches:
-      - main
-      - next
-      - next-major
-      - beta
-      - alpha
+  schedule:
+    # 2 AM on Sunday
+    - cron: "0 2 * * 0"
   workflow_dispatch:
 
 concurrency:
