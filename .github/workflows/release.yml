@@ -13,7 +13,7 @@ concurrency:
 jobs:
   isthmus-native-image-mac-linux:
     name: Build Isthmus Native Image
-    if: github.repository == 'daviddalisusanibararce/tmp-sustrait-java'
+    if: github.repository == 'ddaviddalisusanibararce/tmp-sustrait-java'
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
