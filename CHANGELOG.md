@@ -6,6 +6,14 @@ Release Notes
 
 ### Features
 
+* release manually ([c25ff88](https://github.com/daviddalisusanibararce/tmp-sustrait-java/commit/c25ff8841d6e6a530d69ab8e1c50da284a378be2))
+* test gradle instead of gradlew ([08ebb85](https://github.com/daviddalisusanibararce/tmp-sustrait-java/commit/08ebb852815f3ffd567230ab1111bb392d489e8d))
+
+## 1.0.0 (2022-11-25)
+
+
+### Features
+
 * Add ReadRel LocalFiles ([#96](https://github.com/davisusanibar/substrait-java/issues/96)) ([55d47d5](https://github.com/davisusanibar/substrait-java/commit/55d47d5ba74139902c1d8d942a0ebece0526b3d8))
 * add support for set operations ([#60](https://github.com/davisusanibar/substrait-java/issues/60)) ([0adf366](https://github.com/davisusanibar/substrait-java/commit/0adf3665a4f6cbab5d9bed2f2139d24f4257a146))
 * publish to Sonatype OSSRH ([#102](https://github.com/davisusanibar/substrait-java/issues/102)) ([7b195b0](https://github.com/davisusanibar/substrait-java/commit/7b195b0e561a489ec0ead7cbd8de3a961659dbf6))
